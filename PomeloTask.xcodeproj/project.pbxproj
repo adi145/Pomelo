@@ -23,8 +23,6 @@
 		7429962127147EF30003DB1A /* DefaultURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961127147EF30003DB1A /* DefaultURLSessionConfiguration.swift */; };
 		7429962227147EF30003DB1A /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961327147EF30003DB1A /* EmptyResponse.swift */; };
 		7429962327147EF30003DB1A /* SuccessResponseRefactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */; };
-		7429962427147EF30003DB1A /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961527147EF30003DB1A /* ErrorResponse.swift */; };
-		7429962527147EF30003DB1A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961627147EF30003DB1A /* ErrorMessage.swift */; };
 		7429962627147EF30003DB1A /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961827147EF30003DB1A /* EndpointProtocol.swift */; };
 		7429962727147EF30003DB1A /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961927147EF30003DB1A /* URLSessionProtocol.swift */; };
 		7429964927148D910003DB1A /* NetworkErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429964827148D910003DB1A /* NetworkErrorMessages.swift */; };
@@ -73,8 +71,6 @@
 		7429961127147EF30003DB1A /* DefaultURLSessionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultURLSessionConfiguration.swift; sourceTree = "<group>"; };
 		7429961327147EF30003DB1A /* EmptyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 		7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessResponseRefactor.swift; sourceTree = "<group>"; };
-		7429961527147EF30003DB1A /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		7429961627147EF30003DB1A /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		7429961827147EF30003DB1A /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
 		7429961927147EF30003DB1A /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		7429964827148D910003DB1A /* NetworkErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorMessages.swift; sourceTree = "<group>"; };
@@ -183,8 +179,6 @@
 				7429964827148D910003DB1A /* NetworkErrorMessages.swift */,
 				7429961327147EF30003DB1A /* EmptyResponse.swift */,
 				7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */,
-				7429961527147EF30003DB1A /* ErrorResponse.swift */,
-				7429961627147EF30003DB1A /* ErrorMessage.swift */,
 			);
 			path = GenericResponses;
 			sourceTree = "<group>";
@@ -430,8 +424,6 @@
 				744B539B2712D36A002AF4FA /* Constants.swift in Sources */,
 				7429961E27147EF30003DB1A /* ApiEndpoints.swift in Sources */,
 				744B53842712D2B0002AF4FA /* LocationsModel.swift in Sources */,
-				7429962427147EF30003DB1A /* ErrorResponse.swift in Sources */,
-				7429962527147EF30003DB1A /* ErrorMessage.swift in Sources */,
 				744B53672712D1E0002AF4FA /* AppDelegate.swift in Sources */,
 				744B53692712D1E0002AF4FA /* SceneDelegate.swift in Sources */,
 				7429964927148D910003DB1A /* NetworkErrorMessages.swift in Sources */,

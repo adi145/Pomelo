@@ -31,7 +31,7 @@ final class DefaultNetworkClient: NetworkClient {
             return completion(.failure(.noInternet))
         }
         let request = URLRequest(service: service)
-        print("======= request ========",request)
+        debugPrint("======= request ========",request)
 
         let task = session.dataTask(request: request, completionHandler: { data, response, error in
             let httpResponse = response as? HTTPURLResponse
@@ -63,7 +63,7 @@ final class DefaultNetworkClient: NetworkClient {
                   let model = try? JSONDecoder().decode(T.self, from: data) else {
                 return completion(.failure(.noData))
             }
-            print("======= response ========",model)
+            debugPrint("======= response ========",model)
             completion(.success(model))
         default:
             let error = NetworkError.handleErrorResponse(errorCode: response.statusCode)

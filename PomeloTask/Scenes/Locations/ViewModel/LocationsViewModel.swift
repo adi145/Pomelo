@@ -89,8 +89,6 @@ extension LocationsViewModel: LocationsViewModelProtocol {
                         self?.alertMessage = "Some unable to find the locations. please try again"
                         return
                     }
-                  //  print("Locations Model Response",locationsModel)
-                    print(locationsModel.pickup.count)
                     self?.pickupLocations = locationsModel.pickup.filter{ $0.active == true }
                     guard let filteredLocations = self?.pickupLocations else {
                         return
@@ -127,14 +125,12 @@ extension LocationsViewModel: LocationsViewModelProtocol {
      */
     private func getLocationListViewModelData(response: [Pickup]) -> [LocationsDisplayViewModel]{
         var locationsObjects = [LocationsDisplayViewModel]()
-       // print("response ++++",response.count)
         for location in response {
             if location.alias != ""{
                 let object = LocationsDisplayViewModel(alias: location.alias, address1: location.address1, city: location.city, latitude: location.latitude ?? 0, longitude: location.longitude ?? 0)
                 locationsObjects.append(object)
             }
         }
-        //print("locationsObjects ++++++",locationsObjects.count)
         return locationsObjects
     }
     
@@ -146,12 +142,9 @@ extension LocationsViewModel: LocationsViewModelProtocol {
      - returns: Array of LocationsDisplayViewModel
      */
     func findDistanceWithCurrentLocation(currentLocation:CLLocation) {
-       // print(self.locationsDisplayViewModel.count)
         for (index, destination) in self.locationsDisplayViewModel.enumerated() {
-          //  print("index +++",index)
             let destinationLocation = CLLocation(latitude: destination.latitude, longitude: destination.longitude)
             let distance = calculateDistance(currentLocation: currentLocation, destination: destinationLocation)
-        //    print(String(format: "%.01fkm", distance))
             self.locationsDisplayViewModel[index].distance =  distance  //String(format: "%.01f km", distance)
             self.locationsDisplayViewModel[index].shouldShowDistance = true
         }

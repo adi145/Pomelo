@@ -38,9 +38,4 @@ struct LocationsDisplayViewModel{
     var shouldShowDistance = false
 }
 
-// MARK: - LocationsDisplayErrorModel
-struct ErrorViewModel {
-    var title: String?
-    var message: String?
-}
 
