@@ -8,7 +8,7 @@
 import Foundation
 // MARK: -
 let baseUrl = "https://45434c1b-1e22-4af2-8c9f-c2d99ffa4896.mock.pstmn.io/v3"
-let apiKey = "PMAK-6163c3dd14b6b400461dddb0-bd993658b398c6ff4f18584c0309bc32c1"
+let apiKey = ""
 
 enum ApiEndpoints: EndpointProtocol {
     case pickupLocations
