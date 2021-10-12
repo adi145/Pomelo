@@ -7,41 +7,229 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74269F2627143DA6004961C9 /* LocationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74269F2527143DA6004961C9 /* LocationsViewModelTests.swift */; };
+		74269F2E27143F24004961C9 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 74269F2D27143F24004961C9 /* locations.json */; };
+		742995E427145C0A0003DB1A /* LocationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742995E327145C0A0003DB1A /* LocationViewControllerTests.swift */; };
+		742995E82714622A0003DB1A /* LocationsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742995E72714622A0003DB1A /* LocationsMockData.swift */; };
+		742995F6271472710003DB1A /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742995F5271472710003DB1A /* MockApiManager.swift */; };
+		742995FF271477A50003DB1A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742995FE271477A50003DB1A /* UIViewController+Extensions.swift */; };
+		7429961A27147EF30003DB1A /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960827147EF30003DB1A /* NetworkClient.swift */; };
+		7429961B27147EF30003DB1A /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960A27147EF30003DB1A /* HTTPTask.swift */; };
+		7429961C27147EF30003DB1A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960B27147EF30003DB1A /* HTTPMethod.swift */; };
+		7429961D27147EF30003DB1A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960C27147EF30003DB1A /* NetworkError.swift */; };
+		7429961E27147EF30003DB1A /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960D27147EF30003DB1A /* ApiEndpoints.swift */; };
+		7429961F27147EF30003DB1A /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429960F27147EF30003DB1A /* URLComponentsExtension.swift */; };
+		7429962027147EF30003DB1A /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961027147EF30003DB1A /* URLRequestExtension.swift */; };
+		7429962127147EF30003DB1A /* DefaultURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961127147EF30003DB1A /* DefaultURLSessionConfiguration.swift */; };
+		7429962227147EF30003DB1A /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961327147EF30003DB1A /* EmptyResponse.swift */; };
+		7429962327147EF30003DB1A /* SuccessResponseRefactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */; };
+		7429962427147EF30003DB1A /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961527147EF30003DB1A /* ErrorResponse.swift */; };
+		7429962527147EF30003DB1A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961627147EF30003DB1A /* ErrorMessage.swift */; };
+		7429962627147EF30003DB1A /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961827147EF30003DB1A /* EndpointProtocol.swift */; };
+		7429962727147EF30003DB1A /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429961927147EF30003DB1A /* URLSessionProtocol.swift */; };
+		7429964927148D910003DB1A /* NetworkErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429964827148D910003DB1A /* NetworkErrorMessages.swift */; };
+		742996542715D55E0003DB1A /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742996532715D55E0003DB1A /* UserDefault.swift */; };
+		7429965E2715E3280003DB1A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429965D2715E3280003DB1A /* Reachability.swift */; };
+		743402612714049E002257E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743402602714049E002257E7 /* CoreLocation.framework */; };
 		744B53672712D1E0002AF4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B53662712D1E0002AF4FA /* AppDelegate.swift */; };
 		744B53692712D1E0002AF4FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B53682712D1E0002AF4FA /* SceneDelegate.swift */; };
-		744B536B2712D1E0002AF4FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B536A2712D1E0002AF4FA /* ViewController.swift */; };
 		744B536E2712D1E0002AF4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744B536C2712D1E0002AF4FA /* Main.storyboard */; };
 		744B53702712D1E2002AF4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744B536F2712D1E2002AF4FA /* Assets.xcassets */; };
 		744B53732712D1E2002AF4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744B53712712D1E2002AF4FA /* LaunchScreen.storyboard */; };
+		744B53802712D29A002AF4FA /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B537F2712D29A002AF4FA /* LocationsViewController.swift */; };
+		744B53842712D2B0002AF4FA /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B53832712D2B0002AF4FA /* LocationsModel.swift */; };
+		744B53882712D2E1002AF4FA /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B53872712D2E1002AF4FA /* LocationsViewModel.swift */; };
+		744B539B2712D36A002AF4FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B539A2712D36A002AF4FA /* Constants.swift */; };
+		744B53A52712D9D9002AF4FA /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B53A32712D9D9002AF4FA /* LocationsTableViewCell.swift */; };
+		744B53A62712D9D9002AF4FA /* LocationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744B53A42712D9D9002AF4FA /* LocationsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		74269F1727143C05004961C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744B535B2712D1DF002AF4FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744B53622712D1E0002AF4FA;
+			remoteInfo = PomeloTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		74269F1227143C05004961C9 /* PomeloTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomeloTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74269F1627143C05004961C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74269F2527143DA6004961C9 /* LocationsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModelTests.swift; sourceTree = "<group>"; };
+		74269F2D27143F24004961C9 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		742995E327145C0A0003DB1A /* LocationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewControllerTests.swift; sourceTree = "<group>"; };
+		742995E72714622A0003DB1A /* LocationsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsMockData.swift; sourceTree = "<group>"; };
+		742995F5271472710003DB1A /* MockApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
+		742995FE271477A50003DB1A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		7429960827147EF30003DB1A /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		7429960A27147EF30003DB1A /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		7429960B27147EF30003DB1A /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7429960C27147EF30003DB1A /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7429960D27147EF30003DB1A /* ApiEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		7429960F27147EF30003DB1A /* URLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		7429961027147EF30003DB1A /* URLRequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		7429961127147EF30003DB1A /* DefaultURLSessionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultURLSessionConfiguration.swift; sourceTree = "<group>"; };
+		7429961327147EF30003DB1A /* EmptyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessResponseRefactor.swift; sourceTree = "<group>"; };
+		7429961527147EF30003DB1A /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		7429961627147EF30003DB1A /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		7429961827147EF30003DB1A /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		7429961927147EF30003DB1A /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		7429964827148D910003DB1A /* NetworkErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorMessages.swift; sourceTree = "<group>"; };
+		742996532715D55E0003DB1A /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		7429965D2715E3280003DB1A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		743402602714049E002257E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		744B53632712D1E0002AF4FA /* PomeloTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomeloTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744B53662712D1E0002AF4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		744B53682712D1E0002AF4FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		744B536A2712D1E0002AF4FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		744B536D2712D1E0002AF4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		744B536F2712D1E2002AF4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		744B53722712D1E2002AF4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744B53742712D1E2002AF4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744B537F2712D29A002AF4FA /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		744B53832712D2B0002AF4FA /* LocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		744B53872712D2E1002AF4FA /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		744B539A2712D36A002AF4FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		744B53A32712D9D9002AF4FA /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
+		744B53A42712D9D9002AF4FA /* LocationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		744B53602712D1E0002AF4FA /* Frameworks */ = {
+		74269F0F27143C05004961C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		744B53602712D1E0002AF4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743402612714049E002257E7 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74269F1327143C05004961C9 /* PomeloTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				74269F1627143C05004961C9 /* Info.plist */,
+				74299604271478910003DB1A /* LocationsScene */,
+			);
+			path = PomeloTaskTests;
+			sourceTree = "<group>";
+		};
+		742995FD271477770003DB1A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				742995FE271477A50003DB1A /* UIViewController+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		74299604271478910003DB1A /* LocationsScene */ = {
+			isa = PBXGroup;
+			children = (
+				74269F2D27143F24004961C9 /* locations.json */,
+				742995E327145C0A0003DB1A /* LocationViewControllerTests.swift */,
+				742995E72714622A0003DB1A /* LocationsMockData.swift */,
+				742995F5271472710003DB1A /* MockApiManager.swift */,
+				74269F2527143DA6004961C9 /* LocationsViewModelTests.swift */,
+			);
+			path = LocationsScene;
+			sourceTree = "<group>";
+		};
+		7429960727147EF30003DB1A /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				7429965C2715E30C0003DB1A /* ReachabilityManager */,
+				7429960827147EF30003DB1A /* NetworkClient.swift */,
+				7429960927147EF30003DB1A /* Enums */,
+				7429960E27147EF30003DB1A /* Extensions */,
+				7429961127147EF30003DB1A /* DefaultURLSessionConfiguration.swift */,
+				7429961227147EF30003DB1A /* GenericResponses */,
+				7429961727147EF30003DB1A /* Protocols */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		7429960927147EF30003DB1A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7429960A27147EF30003DB1A /* HTTPTask.swift */,
+				7429960B27147EF30003DB1A /* HTTPMethod.swift */,
+				7429960C27147EF30003DB1A /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7429960E27147EF30003DB1A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7429960F27147EF30003DB1A /* URLComponentsExtension.swift */,
+				7429961027147EF30003DB1A /* URLRequestExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7429961227147EF30003DB1A /* GenericResponses */ = {
+			isa = PBXGroup;
+			children = (
+				7429964827148D910003DB1A /* NetworkErrorMessages.swift */,
+				7429961327147EF30003DB1A /* EmptyResponse.swift */,
+				7429961427147EF30003DB1A /* SuccessResponseRefactor.swift */,
+				7429961527147EF30003DB1A /* ErrorResponse.swift */,
+				7429961627147EF30003DB1A /* ErrorMessage.swift */,
+			);
+			path = GenericResponses;
+			sourceTree = "<group>";
+		};
+		7429961727147EF30003DB1A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7429960D27147EF30003DB1A /* ApiEndpoints.swift */,
+				7429961827147EF30003DB1A /* EndpointProtocol.swift */,
+				7429961927147EF30003DB1A /* URLSessionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		742996522715D5430003DB1A /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				742996532715D55E0003DB1A /* UserDefault.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		7429965C2715E30C0003DB1A /* ReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				7429965D2715E3280003DB1A /* Reachability.swift */,
+			);
+			path = ReachabilityManager;
+			sourceTree = "<group>";
+		};
+		7434025F2714049D002257E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				743402602714049E002257E7 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		744B535A2712D1DF002AF4FA = {
 			isa = PBXGroup;
 			children = (
 				744B53652712D1E0002AF4FA /* PomeloTask */,
+				74269F1327143C05004961C9 /* PomeloTaskTests */,
 				744B53642712D1E0002AF4FA /* Products */,
+				7434025F2714049D002257E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				744B53632712D1E0002AF4FA /* PomeloTask.app */,
+				74269F1227143C05004961C9 /* PomeloTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +245,13 @@
 		744B53652712D1E0002AF4FA /* PomeloTask */ = {
 			isa = PBXGroup;
 			children = (
+				742996522715D5430003DB1A /* UserDefaults */,
+				7429960727147EF30003DB1A /* NetworkClient */,
+				742995FD271477770003DB1A /* Extension */,
+				744B53992712D353002AF4FA /* Constants */,
+				744B537D2712D26E002AF4FA /* Scenes */,
 				744B53662712D1E0002AF4FA /* AppDelegate.swift */,
 				744B53682712D1E0002AF4FA /* SceneDelegate.swift */,
-				744B536A2712D1E0002AF4FA /* ViewController.swift */,
 				744B536C2712D1E0002AF4FA /* Main.storyboard */,
 				744B536F2712D1E2002AF4FA /* Assets.xcassets */,
 				744B53712712D1E2002AF4FA /* LaunchScreen.storyboard */,
@@ -67,9 +260,79 @@
 			path = PomeloTask;
 			sourceTree = "<group>";
 		};
+		744B537D2712D26E002AF4FA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				744B537E2712D285002AF4FA /* Locations */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		744B537E2712D285002AF4FA /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				744B53A22712D9B1002AF4FA /* TableViewCell */,
+				744B53862712D2D4002AF4FA /* ViewModel */,
+				744B53822712D29F002AF4FA /* Model */,
+				744B537F2712D29A002AF4FA /* LocationsViewController.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		744B53822712D29F002AF4FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				744B53832712D2B0002AF4FA /* LocationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		744B53862712D2D4002AF4FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				744B53872712D2E1002AF4FA /* LocationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		744B53992712D353002AF4FA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				744B539A2712D36A002AF4FA /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		744B53A22712D9B1002AF4FA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				744B53A32712D9D9002AF4FA /* LocationsTableViewCell.swift */,
+				744B53A42712D9D9002AF4FA /* LocationsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		74269F1127143C05004961C9 /* PomeloTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74269F1B27143C05004961C9 /* Build configuration list for PBXNativeTarget "PomeloTaskTests" */;
+			buildPhases = (
+				74269F0E27143C05004961C9 /* Sources */,
+				74269F0F27143C05004961C9 /* Frameworks */,
+				74269F1027143C05004961C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74269F1827143C05004961C9 /* PBXTargetDependency */,
+			);
+			name = PomeloTaskTests;
+			productName = PomeloTaskTests;
+			productReference = 74269F1227143C05004961C9 /* PomeloTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		744B53622712D1E0002AF4FA /* PomeloTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 744B53772712D1E2002AF4FA /* Build configuration list for PBXNativeTarget "PomeloTask" */;
@@ -96,6 +359,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					74269F1127143C05004961C9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 744B53622712D1E0002AF4FA;
+					};
 					744B53622712D1E0002AF4FA = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -115,17 +382,27 @@
 			projectRoot = "";
 			targets = (
 				744B53622712D1E0002AF4FA /* PomeloTask */,
+				74269F1127143C05004961C9 /* PomeloTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		74269F1027143C05004961C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74269F2E27143F24004961C9 /* locations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		744B53612712D1E0002AF4FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				744B53732712D1E2002AF4FA /* LaunchScreen.storyboard in Resources */,
 				744B53702712D1E2002AF4FA /* Assets.xcassets in Resources */,
+				744B53A62712D9D9002AF4FA /* LocationsTableViewCell.xib in Resources */,
 				744B536E2712D1E0002AF4FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,17 +410,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		74269F0E27143C05004961C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742995E427145C0A0003DB1A /* LocationViewControllerTests.swift in Sources */,
+				74269F2627143DA6004961C9 /* LocationsViewModelTests.swift in Sources */,
+				742995F6271472710003DB1A /* MockApiManager.swift in Sources */,
+				742995E82714622A0003DB1A /* LocationsMockData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		744B535F2712D1E0002AF4FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744B536B2712D1E0002AF4FA /* ViewController.swift in Sources */,
+				7429962727147EF30003DB1A /* URLSessionProtocol.swift in Sources */,
+				7429961F27147EF30003DB1A /* URLComponentsExtension.swift in Sources */,
+				744B539B2712D36A002AF4FA /* Constants.swift in Sources */,
+				7429961E27147EF30003DB1A /* ApiEndpoints.swift in Sources */,
+				744B53842712D2B0002AF4FA /* LocationsModel.swift in Sources */,
+				7429962427147EF30003DB1A /* ErrorResponse.swift in Sources */,
+				7429962527147EF30003DB1A /* ErrorMessage.swift in Sources */,
 				744B53672712D1E0002AF4FA /* AppDelegate.swift in Sources */,
 				744B53692712D1E0002AF4FA /* SceneDelegate.swift in Sources */,
+				7429964927148D910003DB1A /* NetworkErrorMessages.swift in Sources */,
+				744B53A52712D9D9002AF4FA /* LocationsTableViewCell.swift in Sources */,
+				7429962627147EF30003DB1A /* EndpointProtocol.swift in Sources */,
+				7429962227147EF30003DB1A /* EmptyResponse.swift in Sources */,
+				744B53802712D29A002AF4FA /* LocationsViewController.swift in Sources */,
+				742995FF271477A50003DB1A /* UIViewController+Extensions.swift in Sources */,
+				7429962327147EF30003DB1A /* SuccessResponseRefactor.swift in Sources */,
+				7429961A27147EF30003DB1A /* NetworkClient.swift in Sources */,
+				7429961C27147EF30003DB1A /* HTTPMethod.swift in Sources */,
+				7429962127147EF30003DB1A /* DefaultURLSessionConfiguration.swift in Sources */,
+				7429961B27147EF30003DB1A /* HTTPTask.swift in Sources */,
+				742996542715D55E0003DB1A /* UserDefault.swift in Sources */,
+				744B53882712D2E1002AF4FA /* LocationsViewModel.swift in Sources */,
+				7429961D27147EF30003DB1A /* NetworkError.swift in Sources */,
+				7429965E2715E3280003DB1A /* Reachability.swift in Sources */,
+				7429962027147EF30003DB1A /* URLRequestExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74269F1827143C05004961C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744B53622712D1E0002AF4FA /* PomeloTask */;
+			targetProxy = 74269F1727143C05004961C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		744B536C2712D1E0002AF4FA /* Main.storyboard */ = {
@@ -165,6 +483,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		74269F1927143C05004961C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pomelo.PomeloTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PomeloTask.app/PomeloTask";
+			};
+			name = Debug;
+		};
+		74269F1A27143C05004961C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pomelo.PomeloTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PomeloTask.app/PomeloTask";
+			};
+			name = Release;
+		};
 		744B53752712D1E2002AF4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +676,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		74269F1B27143C05004961C9 /* Build configuration list for PBXNativeTarget "PomeloTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74269F1927143C05004961C9 /* Debug */,
+				74269F1A27143C05004961C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		744B535E2712D1DF002AF4FA /* Build configuration list for PBXProject "PomeloTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
